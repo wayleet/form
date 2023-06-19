@@ -2,7 +2,6 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FormProvider, useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import MaskedInputField from '../../components/ui/masked-input/masked-input-field';
 import { schemaMain, TypeSchemaMain } from '../../utils/zod';
 import { useAppDispatch, useAppSelector } from '../../utils/hooks/redux-hooks';
 import { saveDataMain } from '../../store/slices/form-slice';
@@ -11,6 +10,7 @@ import { socialData } from '../../data';
 import LinkSocial from '../../components/ui/link-social/link-social';
 import styles from './styles.module.css';
 import ButtonStart from '../../components/ui/buttons/button-start/button-start';
+import MaskedInput from '../../components/ui/masked-input/masked-input';
 
 const Main = () => {
 	const { phone, email } = useAppSelector((state) => state.formData);
@@ -48,11 +48,7 @@ const Main = () => {
 			<FormProvider {...methods}>
 				<form onSubmit={handleSubmit(onSubmit)} className="form">
 					<div className="bodyBlock mb24">
-						<MaskedInputField
-							label="Номер телефона"
-							name="phone"
-							mask="+7 (999) 999-99-99"
-						/>
+						<MaskedInput label="Номер телефона" name="phone" />
 						<TextField
 							name="email"
 							label="Email"

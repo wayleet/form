@@ -2,7 +2,7 @@ import * as z from 'zod';
 import { Sex } from '../../data';
 
 export const schemaMain = z.object({
-	phone: z.string().min(10, 'Введите номер'),
+	phone: z.string().nonempty('Введите номер'),
 	email: z.string().email({ message: 'Некорректный email' })
 });
 
