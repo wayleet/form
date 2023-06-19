@@ -1,0 +1,35 @@
+.inputs{
+    margin: 0 0 calc(24 / 14 * 1rem) 0;
+}
+
+.inputsTitle {
+    margin-bottom: 8px;
+}
+
+.fieldAdvantages {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin: 0 0 calc(4 / 14 * 1rem) 0;
+}
+
+.buttonRemove{
+    cursor: pointer;
+}
+
+.buttonRemove:hover img {
+    filter:drop-shadow(1px 1px 1px #5558FA);
+}
+
+.fieldAdvantagesBlock{
+    margin: 0 0 calc(8 / 14 * 1rem) 0;
+}
+
+.fieldBlock:not(:last-of-type) {
+    margin: 0 0 calc(8 / 14 * 1rem) 0;
+}
+
+
+.buttonEnd{
+    align-self: flex-end;
+}

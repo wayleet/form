@@ -1,0 +1,21 @@
+.textarea{
+    width: 100%;
+    resize: vertical;
+    min-height: 84px;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    padding: 12px;
+}
+
+.textareaCount{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 143%;
+    color: #333333;
+}
+
+.textareaFooter{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}

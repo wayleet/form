@@ -1,0 +1,256 @@
+@import url(//db.onlinewebfonts.com/c/c68e21ad1a10803b1ef491fd0392b067?family=SB+Sans+Text);
+@import url(//db.onlinewebfonts.com/c/37086b994764dba84b2ee0f1083bfeed?family=SB+Sans+Interface);
+
+body{
+    font-family: 'SB Sans Interface';
+}
+
+.noScroll{
+    overflow: hidden;
+}
+
+.block{
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px 10px 62px;
+    overflow-x: hidden;
+}
+
+.footerBlock{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bodyBlock{
+    margin-bottom: 64px;
+}
+
+.mb24{
+    margin-bottom: 24px;
+}
+
+.mb67{
+    margin-bottom: 67px;
+}
+
+.inputBlock:not(:last-of-type) {
+    margin: 0 0 calc(24 / 14 * 1rem) 0;
+}
+
+.inputEnter{
+    display: flex;
+    flex-direction: column;
+    gap: calc(8 / 14 * 1rem);
+}
+
+.label{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 143%;
+    color: #333333;
+}
+
+.inputGeneral{
+    padding: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    background-color: #fff;
+    width: 300px;
+    max-width: 100%;
+    transition: 0.3s;
+}
+
+.inputGeneral::placeholder{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 143%;
+    color: rgba(0, 0, 0, 0.48);
+}
+
+.inputGeneral:focus{
+    outline: 1px solid #5558FA;
+    box-shadow: 0 0 10px 1px #5558FA;
+}
+
+.inputError{
+    font-weight: 400;
+    font-size: calc(12 / 14 * 1rem);
+    line-height: 133%;
+    color: rgba(0, 0, 0, 0.48);
+    min-height: 16px;
+    max-width: 300px;
+}
+
+.inputGeneral.inputBig{
+    width: 400px;
+
+}
+
+.inputGeneral.inputBig{
+    background: rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+
+
+.button{
+    padding: 12px 16px;
+    border: 1.5px solid #5558FA;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 143%;
+    color: #5558FA;
+    transition: 0.5s;
+}
+
+.button:hover{
+    background: #5558FA;
+    color: #FFFFFF;
+}
+
+.button.buttonNext{
+    background: #5558FA;
+    color: #FFFFFF;
+}
+
+.button.buttonNext:hover{
+    background: transparent;
+    color: #5558FA;
+}
+
+.select{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url(./assets/images/arrow.svg) 95% center / 12px 7px no-repeat;
+}
+
+.sexList.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.sexList{
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+}
+
+.sexList li{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 143%;
+    padding: 8px 12px;
+}
+
+.sexList li:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.none{
+    display: none;
+}
+
+
+/* -------progress------------- */
+.progressBoxes{
+    flex: 1 1 auto;
+    display: flex;
+}
+
+
+
+.progressBlock{
+    flex: 1 1 auto;
+    display: flex;
+}
+
+.progressBox{
+    position: relative;
+    z-index: 1;
+}
+
+.progressCircle{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #A6A6A6;
+    margin-bottom: calc(12 / 14 * 1rem);
+}
+
+.progressNumber{
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 143%;
+    color: #666666;
+    text-align: left;
+}
+
+.progressLine{
+    flex: 1 1 auto;
+    height: 16px;
+    padding: 4px 0;
+    margin: 0 -3px;
+}
+
+.line{
+    height: 100%;
+    background-color: #EBEBEb;
+}
+
+.progressBlock:not(:first-of-type):not(:last-of-type) .progressNumber{
+    text-align: center;
+}
+
+.progressBlock:last-of-type .progressNumber{
+    text-align: right;
+}
+
+.active .progressNumber{
+
+    color: #5558FA;
+}
+
+.active .progressCircle{
+    position: relative;
+    background: #5558FA;
+}
+
+.active .progressCircle::after{
+    content: "";
+    width: 3px;
+    height: 3px;
+    position: absolute;
+    background: #FFFFFF;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.active .line{
+    background: #5558FA;
+}
+
+
+
+.inputs{
+    margin: 0 0 calc(24 / 14 * 1rem) 0;
+}
+
+.inputsTitle {
+    margin-bottom: 8px;
+}
+
+
+.fieldAdvantagesBlock{
+    margin: 0 0 calc(8 / 14 * 1rem) 0;
+}
+
+
+.buttonEnd{
+    align-self: flex-end;
+}

@@ -1,0 +1,23 @@
+.sotial{
+    color: #5558FA;
+    white-space: nowrap;
+}
+
+
+.sotial:not(:last-of-type){
+    margin: 0 calc(24 / 14 * 1rem) 0 0;
+}
+
+@media (max-width: 410px) {
+    .sotial {
+        display: block;
+    }
+    .sotial:not(:last-of-type){
+        margin: 0 0 calc(5 / 14 * 1rem) 0;
+    }
+}
+
+
+.sotial img{
+    margin-right: calc(6 / 14 * 1rem);
+}

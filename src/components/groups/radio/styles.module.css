@@ -1,0 +1,27 @@
+.group:not(:last-of-type) {
+    margin: 0 0 calc(24 / 14 * 1rem) 0;
+}
+
+.groupLine:not(:last-of-type){
+    margin: 0 0 calc(4 / 14 * 1rem) 0;
+}
+.groupBlock{
+    margin: calc(2 / 14 * 1rem) 0 calc(4 / 14 * 1rem);
+}
+
+.groupLabel{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: max-content;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.label{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 143%;
+    color: #333333;
+}
